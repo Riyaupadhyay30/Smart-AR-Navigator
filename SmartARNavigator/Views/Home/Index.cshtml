@@ -1,0 +1,130 @@
+﻿<div style="
+    position:relative;
+    background: linear-gradient(135deg, #0b132b, #1c2541);
+    min-height:100vh;
+    color:white;
+    font-family:'Poppins', sans-serif;
+    padding:40px;
+    overflow:hidden;
+">
+
+    <!-- PARTICLES BACKGROUND -->
+    <div id="particles"></div>
+
+    <!-- NAVBAR -->
+    <div style="display:flex; justify-content:space-between; align-items:center; position:relative; z-index:1;">
+        <h2 style="margin:0;">AR Campus Navigator</h2>
+
+        <div>
+            <a href="#" style="margin-right:20px; color:white; text-decoration:none;">Home</a>
+            <a href="#" style="margin-right:20px; color:white; text-decoration:none;">Features</a>
+            <a href="#" style="color:white; text-decoration:none;">Contact</a>
+        </div>
+    </div>
+
+    <!-- HERO SECTION -->
+    <div style="text-align:center; margin-top:80px; position:relative; z-index:1;">
+        <h1 style="font-size:48px; margin-bottom:15px;">
+            A smarter way to explore your campus
+        </h1>
+
+        <p style="font-size:18px; opacity:0.8;">
+            Choose where you want to go and navigate easily using smart technology
+        </p>
+    </div>
+
+    <!-- OPTIONS BOXES -->
+    <div style="
+        display:flex;
+        justify-content:center;
+        gap:15px;
+        margin-top:40px;
+        overflow-x:auto;
+        padding:10px 0;
+        position:relative;
+        z-index:1;
+    ">
+
+        <div class="card">🗺️<p>Explore Full Campus</p></div>
+        <div class="card">🎓<p>Meet Faculty / Dean</p></div>
+        <div class="card">📝<p>Admission & Inquiry</p></div>
+        <div class="card">📍<p>Find Classroom & Labs</p></div>
+        <div class="card">☕<p>Facilities</p></div>
+
+    </div>
+
+    <!-- ✅ FIXED BUTTON -->
+    <div style="text-align:center; margin-top:50px; position:relative; z-index:1;">
+        <a href="/Navigation/Select" style="
+            padding:16px 36px;
+            border-radius:40px;
+            background: linear-gradient(45deg, #3b82f6, #06b6d4);
+            color:white;
+            text-decoration:none;
+            font-weight:600;
+            display:inline-block;
+            box-shadow: 0 0 20px rgba(59,130,246,0.6);
+            transition: all 0.3s ease;
+        "
+        onmouseover="this.style.transform='scale(1.08)'"
+        onmouseout="this.style.transform='scale(1)'">
+            Get Started →
+        </a>
+    </div>
+
+</div>
+
+<!-- PARTICLES SCRIPT -->
+<script>
+const container = document.getElementById("particles");
+
+for (let i = 0; i < 40; i++) {
+    let dot = document.createElement("div");
+
+    dot.style.position = "absolute";
+    dot.style.width = "4px";
+    dot.style.height = "4px";
+    dot.style.background = "white";
+    dot.style.borderRadius = "50%";
+    dot.style.opacity = Math.random();
+
+    dot.style.top = Math.random() * 100 + "%";
+    dot.style.left = Math.random() * 100 + "%";
+
+    dot.style.animation = `float ${5 + Math.random()*10}s linear infinite`;
+
+    container.appendChild(dot);
+}
+</script>
+
+<style>
+#particles {
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    z-index:0;
+}
+
+@@keyframes float {
+    from { transform: translateY(0); }
+    to { transform: translateY(-100vh); }
+}
+
+.card{
+    min-width:140px;
+    padding:15px;
+    border-radius:15px;
+    background: rgba(255,255,255,0.05);
+    border:1px solid rgba(255,255,255,0.1);
+    text-align:center;
+    cursor:pointer;
+    flex-shrink:0;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px) scale(1.08);
+}
+</style>

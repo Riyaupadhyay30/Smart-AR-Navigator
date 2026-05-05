@@ -1,0 +1,204 @@
+﻿<div style="
+    position:relative;
+    background: linear-gradient(135deg, #0b132b, #1c2541);
+    min-height:100vh;
+    color:white;
+    font-family:Poppins;
+    overflow:hidden;
+    ">
+
+    <!-- TOP BAR -->
+    <div style="padding:20px 40px; display:flex; justify-content:space-between;">
+        <h3>AR Campus Navigator</h3>
+        <p>
+            Destination: <b>@ViewBag.Destination</b> |
+            Location: <b>@ViewBag.Location</b>
+        </p>
+    </div>
+
+    <!-- NAV INFO -->
+    <div id="navInfo" style="
+        position:absolute;
+        top:70px;
+        left:50%;
+        transform:translateX(-50%);
+        background:rgba(0,0,0,0.6);
+        padding:10px 20px;
+        border-radius:20px;
+        display:flex;
+        gap:15px;">
+        <div id="instruction">Start</div>
+        <div id="distance">--</div>
+    </div>
+
+    <!-- MAP -->
+    <div style="display:flex; justify-content:center; margin-top:-20px;">
+        <div style="
+            width:85%;
+            max-width:1000px;
+            height:520px;
+            background:url('/images/map.png') center/cover;
+            border-radius:25px;
+            position:relative;
+            overflow:hidden;
+            ">
+
+            <!-- START -->
+            <div style="
+            position:absolute;
+            top:82%;
+            left:18%;
+            width:16px;
+            height:16px;
+            background:#22c55e;
+            border-radius:50%;"></div>
+
+            <!-- MOVING DOT -->
+            <div id="movingDot" style="
+            position:absolute;
+            top:82%;
+            left:18%;
+            width:12px;
+            height:12px;
+            background:#0ea5e9;
+            border-radius:50%;
+            z-index:2;"></div>
+
+        </div>
+    </div>
+
+</div>
+
+<script>
+
+    // ✅ FIX: ALWAYS GET REAL LOCATION FROM URL
+    const params = new URLSearchParams(window.location.search);
+    const loc = params.get("location");
+
+    function speak(text){
+        speechSynthesis.cancel();
+        speechSynthesis.speak(new SpeechSynthesisUtterance(text));
+    }
+
+    // ✅ PROPER ROAD PATHS (MATCHED TO YOUR MAP IMAGE)
+    function getPath(location){
+
+        if(location === "Canteen"){
+            return [
+                {top:82,left:18},
+                {top:78,left:25},
+                {top:72,left:30},
+                {top:65,left:35},
+                {top:58,left:40},
+                {top:50,left:45},
+                {top:42,left:50},
+                {top:35,left:55},
+                {top:25,left:60}
+            ];
+        }
+
+        if(location === "Library"){
+            return [
+                {top:82,left:18},
+                {top:75,left:25},
+                {top:68,left:32},
+                {top:60,left:40},
+                {top:50,left:50},
+                {top:40,left:60},
+                {top:35,left:75}
+            ];
+        }
+
+        if(location === "Admin Block"){
+            return [
+                {top:82,left:18},
+                {top:78,left:22},
+                {top:72,left:26},
+                {top:65,left:30},
+                {top:55,left:30}
+            ];
+        }
+
+        if(location === "Lab Block"){
+            return [
+                {top:82,left:18},
+                {top:78,left:28},
+                {top:70,left:35},
+                {top:60,left:40}
+            ];
+        }
+
+        if(location === "Classroom Block"){
+            return [
+                {top:82,left:18},
+                {top:80,left:35},
+                {top:78,left:50},
+                {top:75,left:65}
+            ];
+        }
+
+        if(location === "Cafeteria"){
+            return [
+                {top:82,left:18},
+                {top:70,left:25},
+                {top:55,left:35},
+                {top:40,left:45},
+                {top:25,left:50}
+            ];
+        }
+
+        if(location === "Auditorium"){
+            return [
+                {top:82,left:18},
+                {top:75,left:35},
+                {top:60,left:50},
+                {top:45,left:60}
+            ];
+        }
+
+        if(location === "Computer Center"){
+            return [
+                {top:82,left:18},
+                {top:70,left:40},
+                {top:55,left:55},
+                {top:50,left:70}
+            ];
+        }
+
+        return [];
+    }
+
+    // MOVE DOT
+    function moveDot(){
+        const dot = document.getElementById("movingDot");
+        const path = getPath(loc);
+
+        let i = 0;
+
+        function step(){
+            if(i >= path.length){
+                speak("You have arrived");
+                return;
+            }
+
+            dot.style.top = path[i].top + "%";
+            dot.style.left = path[i].left + "%";
+
+            // simple voice guidance
+            if(i === 1) speak("Go straight");
+            if(i === 3) speak("Keep moving");
+            if(i === path.length - 1) speak("Arrived");
+
+            document.getElementById("distance").innerHTML =
+                ((path.length - i) * 20) + " m";
+
+            i++;
+            setTimeout(step, 1200);
+        }
+
+        step();
+    }
+
+    moveDot();
+
+</script>

@@ -1,0 +1,171 @@
+﻿<div style="
+    position:relative;
+    background: linear-gradient(135deg, #0b132b, #1c2541);
+    min-height:100vh;
+    color:white;
+    font-family:'Poppins', sans-serif;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden;
+">
+
+    <!-- PARTICLES -->
+    <div id="particles"></div>
+
+    <!-- MAIN CONTENT -->
+    <div style="text-align:center; position:relative; z-index:1; width:100%; max-width:1000px;">
+
+        <h2 style="font-size:32px;">Select Your Destination</h2>
+
+        <!-- 🔥 LINE ADDED -->
+        <div style="
+            width:120px;
+            height:3px;
+            background: linear-gradient(90deg, #3b82f6, #06b6d4);
+            margin:10px auto 30px auto;
+            border-radius:10px;
+        "></div>
+
+        <div style="
+            display:flex;
+            gap:25px;
+            margin-top:20px;
+            flex-wrap:wrap;              /* ✅ grid layout */
+            justify-content:center;
+            max-width:1000px;
+            margin-left:auto;
+            margin-right:auto;
+        ">
+
+            <div onclick="selectDest(this,'Explore Campus')" class="card">
+                <div style="font-size:32px;">🗺️</div>
+                <p>Explore Full Campus</p>
+            </div>
+
+            <div onclick="selectDest(this,'Meet Faculty')" class="card">
+                <div style="font-size:32px;">🎓</div>
+                <p>Meet Faculty / Dean</p>
+            </div>
+
+            <div onclick="selectDest(this,'Admission Inquiry')" class="card">
+                <div style="font-size:32px;">📝</div>
+                <p>Admission & Inquiry</p>
+            </div>
+
+            <div onclick="selectDest(this,'Find Classroom')" class="card">
+                <div style="font-size:32px;">📍</div>
+                <p>Find Classroom & Labs</p>
+            </div>
+
+            <div onclick="selectDest(this,'Facilities')" class="card">
+                <div style="font-size:32px;">☕</div>
+                <p>Facilities</p>
+            </div>
+
+        </div>
+
+        <button onclick="goNext()" style="
+            margin-top:50px;
+            padding:16px 40px;
+            border-radius:40px;
+            border:none;
+            background: linear-gradient(45deg, #3b82f6, #06b6d4);
+            color:white;
+            font-weight:600;
+            font-size:16px;
+            cursor:pointer;
+            box-shadow:0 0 25px rgba(59,130,246,0.8);
+            transition:0.3s;
+        "
+        onmouseover="this.style.transform='scale(1.12)'; this.style.boxShadow='0 0 50px rgba(59,130,246,1)'"
+        onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 0 25px rgba(59,130,246,0.8)'">
+            Continue →
+        </button>
+
+    </div>
+
+</div>
+
+<script>
+let selected = "";
+
+function selectDest(el, value) {
+    selected = value;
+
+    document.querySelectorAll('.card').forEach(c => {
+        c.style.background = "rgba(255,255,255,0.05)";
+    });
+
+    el.style.background = "rgba(59,130,246,0.35)";
+}
+
+function goNext() {
+    if (selected === "") {
+        alert("Please select a destination");
+        return;
+    }
+
+    window.location.href = '/User/Form?destination=' + encodeURIComponent(selected);
+}
+
+// PARTICLES
+const container = document.getElementById("particles");
+
+for (let i = 0; i < 40; i++) {
+    let dot = document.createElement("div");
+
+    dot.style.position = "absolute";
+    dot.style.width = "4px";
+    dot.style.height = "4px";
+    dot.style.background = "white";
+    dot.style.borderRadius = "50%";
+    dot.style.opacity = Math.random();
+
+    dot.style.top = Math.random() * 100 + "%";
+    dot.style.left = Math.random() * 100 + "%";
+
+    dot.style.animation = `float ${5 + Math.random()*10}s linear infinite`;
+
+    container.appendChild(dot);
+}
+</script>
+
+<style>
+#particles {
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    z-index:0;
+    overflow:hidden;
+}
+
+@@keyframes float {
+    from { transform: translateY(0); }
+    to { transform: translateY(-100vh); }
+}
+
+.card {
+    width:200px;
+    padding:25px;
+    border-radius:18px;
+    background: rgba(255,255,255,0.05);
+    border:1px solid rgba(255,255,255,0.15);
+    cursor:pointer;
+    text-align:center;
+    transition: all 0.35s ease;
+}
+
+.card:hover {
+    transform: translateY(-15px) scale(1.1);
+    box-shadow: 0 30px 60px rgba(0,0,0,0.8);
+    background: rgba(255,255,255,0.18);
+}
+
+.card p {
+    margin-top:12px;
+    font-size:16px;
+}
+</style>

@@ -1,0 +1,229 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\SmartARNavigator\\SmartARNavigator\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{52DB7B9F-B662-67BB-4ABA-D087188EBE80}|SmartARNavigator.csproj|d:\\smartarnavigator\\smartarnavigator\\views\\navigation\\location.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{52DB7B9F-B662-67BB-4ABA-D087188EBE80}|SmartARNavigator.csproj|solutionrelative:views\\navigation\\location.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52DB7B9F-B662-67BB-4ABA-D087188EBE80}|SmartARNavigator.csproj|d:\\smartarnavigator\\smartarnavigator\\views\\user\\navigationtype.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{52DB7B9F-B662-67BB-4ABA-D087188EBE80}|SmartARNavigator.csproj|solutionrelative:views\\user\\navigationtype.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52DB7B9F-B662-67BB-4ABA-D087188EBE80}|SmartARNavigator.csproj|d:\\smartarnavigator\\smartarnavigator\\views\\navigation\\ar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{52DB7B9F-B662-67BB-4ABA-D087188EBE80}|SmartARNavigator.csproj|solutionrelative:views\\navigation\\ar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52DB7B9F-B662-67BB-4ABA-D087188EBE80}|SmartARNavigator.csproj|d:\\smartarnavigator\\smartarnavigator\\views\\navigation\\map.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{52DB7B9F-B662-67BB-4ABA-D087188EBE80}|SmartARNavigator.csproj|solutionrelative:views\\navigation\\map.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52DB7B9F-B662-67BB-4ABA-D087188EBE80}|SmartARNavigator.csproj|d:\\smartarnavigator\\smartarnavigator\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{52DB7B9F-B662-67BB-4ABA-D087188EBE80}|SmartARNavigator.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52DB7B9F-B662-67BB-4ABA-D087188EBE80}|SmartARNavigator.csproj|d:\\smartarnavigator\\smartarnavigator\\views\\navigation\\select.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{52DB7B9F-B662-67BB-4ABA-D087188EBE80}|SmartARNavigator.csproj|solutionrelative:views\\navigation\\select.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52DB7B9F-B662-67BB-4ABA-D087188EBE80}|SmartARNavigator.csproj|d:\\smartarnavigator\\smartarnavigator\\controllers\\navigationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52DB7B9F-B662-67BB-4ABA-D087188EBE80}|SmartARNavigator.csproj|solutionrelative:controllers\\navigationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52DB7B9F-B662-67BB-4ABA-D087188EBE80}|SmartARNavigator.csproj|d:\\smartarnavigator\\smartarnavigator\\views\\user\\form.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{52DB7B9F-B662-67BB-4ABA-D087188EBE80}|SmartARNavigator.csproj|solutionrelative:views\\user\\form.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52DB7B9F-B662-67BB-4ABA-D087188EBE80}|SmartARNavigator.csproj|d:\\smartarnavigator\\smartarnavigator\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52DB7B9F-B662-67BB-4ABA-D087188EBE80}|SmartARNavigator.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52DB7B9F-B662-67BB-4ABA-D087188EBE80}|SmartARNavigator.csproj|d:\\smartarnavigator\\smartarnavigator\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52DB7B9F-B662-67BB-4ABA-D087188EBE80}|SmartARNavigator.csproj|solutionrelative:appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52DB7B9F-B662-67BB-4ABA-D087188EBE80}|SmartARNavigator.csproj|d:\\smartarnavigator\\smartarnavigator\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{52DB7B9F-B662-67BB-4ABA-D087188EBE80}|SmartARNavigator.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52DB7B9F-B662-67BB-4ABA-D087188EBE80}|SmartARNavigator.csproj|d:\\smartarnavigator\\smartarnavigator\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52DB7B9F-B662-67BB-4ABA-D087188EBE80}|SmartARNavigator.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52DB7B9F-B662-67BB-4ABA-D087188EBE80}|SmartARNavigator.csproj|d:\\smartarnavigator\\smartarnavigator\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52DB7B9F-B662-67BB-4ABA-D087188EBE80}|SmartARNavigator.csproj|solutionrelative:user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "D:\\SmartARNavigator\\SmartARNavigator\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UserController.cs",
+              "ToolTip": "D:\\SmartARNavigator\\SmartARNavigator\\Controllers\\UserController.cs",
+              "RelativeToolTip": "Controllers\\UserController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-29T23:03:06.131Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Select.cshtml",
+              "DocumentMoniker": "D:\\SmartARNavigator\\SmartARNavigator\\Views\\Navigation\\Select.cshtml",
+              "RelativeDocumentMoniker": "Views\\Navigation\\Select.cshtml",
+              "ToolTip": "D:\\SmartARNavigator\\SmartARNavigator\\Views\\Navigation\\Select.cshtml",
+              "RelativeToolTip": "Views\\Navigation\\Select.cshtml",
+              "ViewState": "AgIAAKoAAAAAAAAAAAAAAJMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-29T22:04:50.361Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\SmartARNavigator\\SmartARNavigator\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\SmartARNavigator\\SmartARNavigator\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAHUAAAAAAAAAAAAAAA8AAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-29T21:35:24.879Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Map.cshtml",
+              "DocumentMoniker": "D:\\SmartARNavigator\\SmartARNavigator\\Views\\Navigation\\Map.cshtml",
+              "RelativeDocumentMoniker": "Views\\Navigation\\Map.cshtml",
+              "ToolTip": "D:\\SmartARNavigator\\SmartARNavigator\\Views\\Navigation\\Map.cshtml",
+              "RelativeToolTip": "Views\\Navigation\\Map.cshtml",
+              "ViewState": "AgIAAMAAAAAAAAAAAAAAABAAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-01T10:15:05.784Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AR.cshtml",
+              "DocumentMoniker": "D:\\SmartARNavigator\\SmartARNavigator\\Views\\Navigation\\AR.cshtml",
+              "RelativeDocumentMoniker": "Views\\Navigation\\AR.cshtml",
+              "ToolTip": "D:\\SmartARNavigator\\SmartARNavigator\\Views\\Navigation\\AR.cshtml",
+              "RelativeToolTip": "Views\\Navigation\\AR.cshtml",
+              "ViewState": "AgIAAFwAAAAAAAAAAAAAAFwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-03T10:38:32.697Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "NavigationController.cs",
+              "DocumentMoniker": "D:\\SmartARNavigator\\SmartARNavigator\\Controllers\\NavigationController.cs",
+              "RelativeDocumentMoniker": "Controllers\\NavigationController.cs",
+              "ToolTip": "D:\\SmartARNavigator\\SmartARNavigator\\Controllers\\NavigationController.cs",
+              "RelativeToolTip": "Controllers\\NavigationController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAswCQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-29T21:59:59.72Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "NavigationType.cshtml",
+              "DocumentMoniker": "D:\\SmartARNavigator\\SmartARNavigator\\Views\\User\\NavigationType.cshtml",
+              "RelativeDocumentMoniker": "Views\\User\\NavigationType.cshtml",
+              "ToolTip": "D:\\SmartARNavigator\\SmartARNavigator\\Views\\User\\NavigationType.cshtml",
+              "RelativeToolTip": "Views\\User\\NavigationType.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD8AAABaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-01T10:04:30.863Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Location.cshtml",
+              "DocumentMoniker": "D:\\SmartARNavigator\\SmartARNavigator\\Views\\Navigation\\Location.cshtml",
+              "RelativeDocumentMoniker": "Views\\Navigation\\Location.cshtml",
+              "ToolTip": "D:\\SmartARNavigator\\SmartARNavigator\\Views\\Navigation\\Location.cshtml",
+              "RelativeToolTip": "Views\\Navigation\\Location.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJ0AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-01T11:04:58.92Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Form.cshtml",
+              "DocumentMoniker": "D:\\SmartARNavigator\\SmartARNavigator\\Views\\User\\Form.cshtml",
+              "RelativeDocumentMoniker": "Views\\User\\Form.cshtml",
+              "ToolTip": "D:\\SmartARNavigator\\SmartARNavigator\\Views\\User\\Form.cshtml",
+              "RelativeToolTip": "Views\\User\\Form.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHcAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-29T23:10:01.118Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\SmartARNavigator\\SmartARNavigator\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "D:\\SmartARNavigator\\SmartARNavigator\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-05-01T09:07:52.618Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\SmartARNavigator\\SmartARNavigator\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\SmartARNavigator\\SmartARNavigator\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAwwBAAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-01T09:24:20.26Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\SmartARNavigator\\SmartARNavigator\\User.cs",
+              "RelativeDocumentMoniker": "User.cs",
+              "ToolTip": "D:\\SmartARNavigator\\SmartARNavigator\\User.cs",
+              "RelativeToolTip": "User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-01T09:28:43.601Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "D:\\SmartARNavigator\\SmartARNavigator\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "AppDbContext.cs",
+              "ToolTip": "D:\\SmartARNavigator\\SmartARNavigator\\AppDbContext.cs",
+              "RelativeToolTip": "AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-01T09:29:43.107Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+﻿<div style="
+    position:relative;
+    background:black;
+    height:100vh;
+    overflow:hidden;
+    font-family:Poppins;
+    color:white;
+    ">
+
+    <!-- CAMERA -->
+    <video id="camera" autoplay playsinline style="
+    position:absolute;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    "></video>
+
+    <!-- OVERLAY -->
+    <div style="
+        position:absolute;
+        width:100%;
+        height:100%;
+        display:flex;
+        flex-direction:column;
+        justify-content:space-between;
+        padding:20px;
+        ">
+
+        <!-- TOP -->
+        <div style="text-align:center;">
+            <h3>AR Navigation</h3>
+            <p>Destination: <b>@ViewBag.Destination</b></p>
+        </div>
+
+        <!-- AR ARROW -->
+        <div id="arrow" style="text-align:center; font-size:80px;">
+            ⬆️
+        </div>
+
+        <!-- BOTTOM -->
+        <div style="
+            text-align:center;
+            background:rgba(0,0,0,0.6);
+            padding:10px;
+            border-radius:20px;
+            ">
+            <p id="instruction">Move Forward</p>
+            <p id="distance">50 m</p>
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+    // CAMERA
+    navigator.mediaDevices.getUserMedia({ video: true })
+    .then(stream => {
+        document.getElementById("camera").srcObject = stream;
+    })
+    .catch(() => alert("Camera allow karo"));
+
+    // VOICE
+    function speak(text){
+        const msg = new SpeechSynthesisUtterance(text);
+        speechSynthesis.speak(msg);
+    }
+
+    // STEPS
+    let steps = [
+        {a:"⬆️", t:"Go Straight", d:50},
+        {a:"➡️", t:"Turn Right", d:30},
+        {a:"⬅️", t:"Turn Left", d:15},
+        {a:"🏁", t:"Arrived", d:0}
+    ];
+
+    let i = 0;
+
+    function run(){
+        if(i >= steps.length) return;
+
+        document.getElementById("arrow").innerHTML = steps[i].a;
+        document.getElementById("instruction").innerHTML = steps[i].t;
+        document.getElementById("distance").innerHTML = steps[i].d + " m";
+
+        speak(steps[i].t);
+
+        i++;
+        setTimeout(run, 3000);
+    }
+
+    setTimeout(run, 2000);
+</script>

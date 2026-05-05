@@ -1,0 +1,11 @@
+DROP TABLE Users;
+
+CREATE TABLE Users (
+    Id INT IDENTITY(1,1) PRIMARY KEY,
+    Name NVARCHAR(100),
+    Email NVARCHAR(100),
+    Phone NVARCHAR(20),
+    VisitType NVARCHAR(50),
+    Destination NVARCHAR(100)
+);
+SELECT * FROM Users

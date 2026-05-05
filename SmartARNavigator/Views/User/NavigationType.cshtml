@@ -1,0 +1,95 @@
+﻿<div style="
+    position:relative;
+    background: linear-gradient(135deg, #0b132b, #1c2541);
+    min-height:100vh;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-family:Poppins;
+    overflow:hidden;
+">
+
+    <!-- PARTICLES -->
+    <div id="particles"></div>
+
+    <div style="text-align:center; position:relative; z-index:1;">
+
+        <h2 style="font-size:32px;">Choose Navigation Type</h2>
+
+        <p style="opacity:0.7;">
+            Destination: <b>@ViewBag.Destination</b>
+        </p>
+
+        <div style="display:flex; gap:40px; margin-top:50px; justify-content:center;">
+
+            <!-- NORMAL -->
+            <div onclick="goMap()" style="
+                padding:40px;
+                border-radius:20px;
+                background:rgba(255,255,255,0.05);
+                cursor:pointer;
+                transition:0.3s;
+                width:200px;
+            "
+            onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0 20px 40px rgba(0,0,0,0.6)'"
+            onmouseout="this.style.transform='scale(1)'">
+                🗺️
+                <p>Normal Navigation</p>
+            </div>
+
+            <!-- ✅ AR FIXED -->
+            <div onclick="goAR()" style="
+                padding:40px;
+                border-radius:20px;
+                background:rgba(255,255,255,0.05);
+                cursor:pointer;
+                transition:0.3s;
+                width:200px;
+            "
+            onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0 20px 40px rgba(0,0,0,0.6)'"
+            onmouseout="this.style.transform='scale(1)'">
+                🧭
+                <p>AR Navigation</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+function goMap(){
+    window.location.href = '/Navigation/Location?destination=@ViewBag.Destination&mode=Map';
+}
+
+// ✅ NEW FUNCTION
+function goAR(){
+    window.location.href = '/Navigation/Location?destination=@ViewBag.Destination&mode=AR';
+}
+
+// particles
+const container = document.getElementById("particles");
+for (let i = 0; i < 40; i++) {
+    let dot = document.createElement("div");
+    dot.style.position = "absolute";
+    dot.style.width = "4px";
+    dot.style.height = "4px";
+    dot.style.background = "white";
+    dot.style.borderRadius = "50%";
+    dot.style.opacity = Math.random();
+    dot.style.top = Math.random() * 100 + "%";
+    dot.style.left = Math.random() * 100 + "%";
+    dot.style.animation = `float ${5 + Math.random()*10}s linear infinite`;
+    container.appendChild(dot);
+}
+</script>
+
+<style>
+#particles{position:absolute;width:100%;height:100%;top:0;left:0;}
+@@keyframes float{
+from{transform:translateY(0);}
+to{transform:translateY(-100vh);}
+}
+</style>
